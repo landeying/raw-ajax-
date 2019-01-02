@@ -38,13 +38,13 @@ var ajax = {
 		var xhr = createXHR();
 		if(xhr){
 			xhr.open("post",url,true);
-			xhr.setRequestHead("Content-Type","application/x-www-form-urlencoded;charset=gbk;");
+			xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charset=gbk;");
 			xhr.onreadystatechange = function(){
 				if(xhr.readyState == 4 && xhr.status == 200){
 					fn.call(this,xhr.responseText)
 				}
 			}
-			xhr.send("·¢ËÍÇëÇóµÄ²ÎÊı")//·¢ËÍÇëÇóµÄ²ÎÊı,ÇëÇóÌå
+			xhr.send("å‘é€è¯·æ±‚çš„å‚æ•°")//å‘é€è¯·æ±‚çš„å‚æ•°,è¯·æ±‚ä½“
 		}
 	}
 }
