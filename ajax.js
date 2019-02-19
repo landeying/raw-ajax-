@@ -32,7 +32,7 @@ var ajax = {
 			}
 			xhr.send(null)
 		}
-	}
+	},
 
 	post:function(url,fn){
 		var xhr = createXHR();
